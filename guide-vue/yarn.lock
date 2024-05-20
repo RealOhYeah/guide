@@ -1639,7 +1639,7 @@
 
 "@vue/vue-loader-v15@npm:vue-loader@^15.9.7":
   "integrity" "sha512-0iw4VchYLePqJfJu9s62ACWUXeSqM30SQqlIftbYWM3C+jpPcEHKSPUZBLjSF9au4HTHQ/naF6OGnO3Q/qGR3Q=="
-  "resolved" "https://registry.npmjs.org/vue-loader/-/vue-loader-15.11.1.tgz"
+  "resolved" "https://registry.npmmirror.com/vue-loader/-/vue-loader-15.11.1.tgz"
   "version" "15.11.1"
   dependencies:
     "@vue/component-compiler-utils" "^3.1.0"
@@ -2503,7 +2503,7 @@
   "resolved" "https://registry.npmjs.org/css-declaration-sorter/-/css-declaration-sorter-6.4.1.tgz"
   "version" "6.4.1"
 
-"css-loader@*", "css-loader@^6.5.0":
+"css-loader@^6.5.0":
   "integrity" "sha512-LTSA/jWbwdMlk+rhmElbDR2vbtQoTBPr7fkJE+mxrHj+7ru0hUmHafDRzWIjIHTwpitWVaqY2/UWGRca3yUgRw=="
   "resolved" "https://registry.npmjs.org/css-loader/-/css-loader-6.10.0.tgz"
   "version" "6.10.0"
@@ -3315,7 +3315,7 @@
 
 "hash-sum@^1.0.2":
   "integrity" "sha512-fUs4B4L+mlt8/XAtSOGMUO1TXmAelItBPtJG7CyHJfYTdDjwisntGO2JQz7oUsatOY9o68+57eziUVNw/mRHmA=="
-  "resolved" "https://registry.npmjs.org/hash-sum/-/hash-sum-1.0.2.tgz"
+  "resolved" "https://registry.npmmirror.com/hash-sum/-/hash-sum-1.0.2.tgz"
   "version" "1.0.2"
 
 "hash-sum@^2.0.0":
@@ -5781,7 +5781,7 @@
   "resolved" "https://registry.npmjs.org/webpack-virtual-modules/-/webpack-virtual-modules-0.4.6.tgz"
   "version" "0.4.6"
 
-"webpack@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^3.0.0 || ^4.1.0 || ^5.0.0-0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.1.0 || ^5.0.0-0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.20.0", "webpack@^5.54.0", "webpack@>=2":
+"webpack@^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.1.0 || ^5.0.0-0", "webpack@^4.27.0 || ^5.0.0", "webpack@^4.37.0 || ^5.0.0", "webpack@^5.0.0", "webpack@^5.1.0", "webpack@^5.20.0", "webpack@^5.54.0", "webpack@>=2":
   "integrity" "sha512-rzVwlLeBWHJbmgTC/8TvAcu5vpJNII+MelQpylD4jNERPwpBJOE2lEcko1zJX3QJeLjTTAnQxn/OJ8bjDzVQaw=="
   "resolved" "https://registry.npmjs.org/webpack/-/webpack-5.91.0.tgz"
   "version" "5.91.0"
