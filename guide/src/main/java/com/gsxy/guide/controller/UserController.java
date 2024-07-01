@@ -5,6 +5,7 @@ import com.gsxy.guide.domain.User;
 import com.gsxy.guide.domain.bo.UserLoginBo;
 import com.gsxy.guide.domain.vo.ResponseVo;
 import com.gsxy.guide.service.UserService;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -20,6 +21,7 @@ import javax.annotation.Resource;
  * @since 2024-03-13 18:25:21
  */
 @RestController
+@Api(value = "用户版块接口",tags = {"用户版块接口"})
 @RequestMapping(value = "user", produces = "text/plain;charset=UTF-8")
 public class UserController {
     /**

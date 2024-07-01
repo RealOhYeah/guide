@@ -5,6 +5,8 @@ import com.gsxy.guide.domain.Guide;
 import com.gsxy.guide.domain.bo.GuidePagingToGetDataBo;
 import com.gsxy.guide.domain.vo.ResponseVo;
 import com.gsxy.guide.service.GuideService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -16,6 +18,7 @@ import javax.annotation.Resource;
  * @since 2024-03-13 17:35:24
  */
 @RestController
+@Api(value = "向导版块接口",tags = {"向导版块接口"})
 @RequestMapping(value = "guide", produces = "text/plain;charset=UTF-8")
 public class GuideController {
     /**
@@ -32,6 +35,7 @@ public class GuideController {
      * @return 查询结果
      */
     @PostMapping("/queryByPage")
+    @ApiOperation("分页查询Guide数据")
     public String queryByPage(@RequestBody GuidePagingToGetDataBo guidePagingToGetDataBo) {
 
         return JSONArray.toJSONString(guideService.queryByPage(guidePagingToGetDataBo));
@@ -44,6 +48,7 @@ public class GuideController {
      * @return 单条数据
      */
     @GetMapping("{id}")
+    @ApiOperation("根据id查询Guide数据")
     public String queryById(@PathVariable("id") Long id) {
         return JSONArray.toJSONString(guideService.queryById(id));
     }
@@ -55,6 +60,7 @@ public class GuideController {
      * @return 新增结果
      */
     @PostMapping("/add")
+    @ApiOperation("新增Guide数据")
     public String add(@RequestBody Guide guide) {
         return JSONArray.toJSONString(guideService.insert(guide));
     }
@@ -66,6 +72,7 @@ public class GuideController {
      * @return 编辑结果
      */
     @PostMapping("/edit")
+    @ApiOperation("修改Guide数据")
     public String edit(@RequestBody Guide guide) {
         return JSONArray.toJSONString(guideService.update(guide));
     }
@@ -77,6 +84,7 @@ public class GuideController {
      * @return 删除是否成功
      */
     @PostMapping("/deleteById")
+    @ApiOperation("根据id删除Guide数据")
     public String deleteById(@RequestParam("id")  Long id) {
         return JSONArray.toJSONString(guideService.deleteById(id));
     }
