@@ -2,7 +2,7 @@
  * @Author: Oh...Yeah!!! 614988210@qq.com
  * @Date: 2024-04-01 16:30:20
  * @LastEditors: Oh...Yeah!!! 614988210@qq.com
- * @LastEditTime: 2024-05-20 13:09:54
+ * @LastEditTime: 2024-07-07 18:27:22
  * @FilePath: \guide-vue\src\router\index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -89,13 +89,13 @@ const router = new VueRouter({
 });
 
 //路由前置守卫
-router.beforeEach((to, from, next) => {
-  const isLogin = VueCookie.get("token") ? true : false;
-  if (to.path == "/login" || to.path == "/register" || to.path == "/UserReg" || to.path == "/LoginTwo" ) {
-    next();
-  } else {
-    isLogin ? next() : next("/login");
-  }
-});
+// router.beforeEach((to, from, next) => {
+//   const isLogin = VueCookie.get("token") ? true : false;
+//   if (to.path == "/login" || to.path == "/register" || to.path == "/UserReg" || to.path == "/LoginTwo" ) {
+//     next();
+//   } else {
+//     isLogin ? next() : next("/login");
+//   }
+// });
 
 export default router;
