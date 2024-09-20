@@ -7,6 +7,7 @@ import com.gsxy.guide.domain.vo.ResponseVo;
 import com.gsxy.guide.service.GuideService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -24,7 +25,7 @@ public class GuideController {
     /**
      * 服务对象
      */
-    @Resource
+    @Autowired
     private GuideService guideService;
 
     /**

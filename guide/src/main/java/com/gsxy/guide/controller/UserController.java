@@ -7,6 +7,7 @@ import com.gsxy.guide.domain.vo.ResponseVo;
 import com.gsxy.guide.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +28,7 @@ public class UserController {
     /**
      * 服务对象
      */
-    @Resource
+    @Autowired
     private UserService userService;
 
 
